@@ -2,14 +2,19 @@ import React, {Component} from 'react';
 import '../components/css/style.css';
 
 class Header extends Component {
+
+    inputChangeHandler(event){
+        console.log(event.target.value)
+    }
+
     render(){
-return(
-    <header>
-       <div className="logo">Logo</div>
-       <input type="text"/>
-       
-    </header>
-)
+        return(
+            <header>
+            <div className="logo">Logo</div>
+            <input type="text" onChange={this.inputChangeHandler}/>
+            
+            </header>
+        )
     }
 };
 
