@@ -4,6 +4,7 @@ body{
 
 header{
     background:#03a9f4;
+    background:#4f4f4f;
     text-align:center;
 }
 
@@ -16,4 +17,21 @@ header{
 header input{
     font-size: 20px;
     margin:20px 0;
+}
+
+.news-container{
+   width:80%;
+   margin: 0 auto;
+   display:flex;
+   flex-direction: row;
+
+}
+
+.single-news{
+    width:50%;
+    background: #efefef;
+    margin: 20px;
+    padding: 20px;
+    border:2px solid #4f4f4f;
+    border-radius:12px;
 }

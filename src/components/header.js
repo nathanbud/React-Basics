@@ -1,21 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../components/css/style.css';
 
-class Header extends Component {
+const Header = (props) => {
 
-    inputChangeHandler(event){
-        console.log(event.target.value)
-    }
-
-    render(){
         return(
             <header>
-            <div className="logo">Logo</div>
-            <input type="text" onChange={this.inputChangeHandler}/>
-            
+            <div className="logo">Search News</div>
+            <input type="text" onChange={props.keywords}/> 
             </header>
         )
-    }
 };
 
 export default Header;
